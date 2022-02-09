@@ -1,0 +1,172 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Philosopher:wght@700&display=swap');
+
+
+
+/*Elements*/
+
+html{
+    height:100%;
+    width:100%;
+    font-size: 12px;
+    font-family:Philosophy,'Noto Sans';
+}
+body{
+    height:100%;
+    border:0;
+    margin:0;
+    padding:0;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    }
+    
+nav{
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr;
+    height:10vh;
+    width:100%;
+    align-items: center;
+    /* position: sticky;
+    top:0; */
+    backdrop-filter: blur(10px);
+    
+}
+main{
+    height:90vh;
+}
+#main__container{
+    width:100%;
+    display:grid;
+    grid-template-columns: 1fr 5fr;
+    position: relative;
+    overflow: hidden;
+    position: sticky;
+}
+#main__container::-webkit-scrollbar{
+    display: none;
+}
+/*Navbar*/
+#logo{
+    margin-left:2rem;
+    font-size: 4rem;
+}
+#links{
+    width:100%;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    
+}
+.link{
+    margin-right:2rem;
+}
+#search__container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#search{
+    width:20%;
+    height:2rem;
+    font-size:1.5rem;
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 4px solid var(--primary);
+    transition:.5s;
+}
+i{
+    display: inline-block;
+    vertical-align: center;
+}
+#search__icon {
+    color:var(--primary);
+    position: relative;
+    top: 4px; /*Change this to adjust the icon*/
+}
+.link {
+    position: relative; 
+    font-size:1.5rem;
+    top: 2px; /*Change this to adjust the icon*/
+}
+#signup{
+    border:none;
+    font-size:1.5rem;
+    padding:1rem 4rem;
+    border-radius: 8px;
+}
+#search:active,#search:focus{
+    width:40%;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--main-white);
+  opacity: 1; /* Firefox */
+}
+
+/*Main Grid first */
+
+#filters{ 
+    height:95%;
+    display: flex;
+    flex-direction: column;
+    min-width:30rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top:0;
+    border-radius:8px;
+    margin-top:2rem;
+    margin-left:2rem;
+}
+
+#row_one{
+display: flex;
+margin:2rem 0;
+}
+#filter__clear{
+    margin-left:auto;
+}
+#row_two{
+    display: flex;
+    flex-direction: column;margin:1rem 0;
+}
+#row_three{
+    display: flex;
+    flex-direction: column;margin:1rem 0;
+}
+
+#row_four{
+display: flex;
+    flex-direction: column;margin:1rem 0;
+}
+#row_five{
+    display: flex;
+    flex-direction: column;margin:1rem 0;
+}
+#rating__radio-button{
+    display: flex;
+    flex-direction: column;
+}
+.radio{
+    height: 15px;
+    margin-right: 15px;
+    position: relative;
+    top:6px;
+    width: 2rem;
+    padding:2rem;
+}
+#products{
+    height:100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow:auto;
+    align-items: center;
+}
+#products::-webkit-scrollbar{
+    display:none;
+}
