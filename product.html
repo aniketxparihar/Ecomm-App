@@ -13,19 +13,19 @@
 
 <body class="bg-main-black">
     <nav class="bg-main-black">
-        <div id="logo" class="txt-main-white">Fitkart</div>
+        <div id="logo" class="txt-gray-400">Fitkart</div>
         <div id="search__container">
             <i class="material-icons " id="search__icon">search</i>
             <input type="text" id="search" placeholder="Search Here">
         </div>
 
         <div id="links">
-            <button class="link bg--primary txt-main-white pointer" id="signup">Signup</button>
-            <a class="link pointer" id="cart__page"><i class="badge__icon material-icons relative p-5 txt-main-white">shopping_cart<div
-                        class="badge--right badge--small txt-s txt-main-white bg--success flex justify-center align-center rounded-full absolute">
+            <button class="link bg--primary txt-main-black txt-2xl pointer" id="signup">Signup</button>
+            <a class="link pointer" id="cart__page"><i class="badge__icon material-icons relative p-5 txt-gray-400">shopping_cart<div
+                        class="badge--right badge--small txt-m txt-main-black bg--success flex justify-center align-center rounded-full absolute">
                         4</div></i></a>
-            <a class="link pointer" id="cart__page"><i class="badge__icon material-icons relative p-5 txt-main-white">favorite_border<div
-                        class="badge--right badge--small txt-s txt-main-white bg--success flex justify-center align-center rounded-full absolute">
+            <a class="link pointer" id="cart__page"><i class="badge__icon material-icons relative p-5 txt-gray-400">favorite_border<div
+                        class="badge--right badge--small txt-m txt-main-black bg--success flex justify-center align-center rounded-full absolute">
                         4</div></i></a>
         </div>
     </nav>
@@ -34,48 +34,48 @@
         <div id="main__container">
             <div id="filters" class="bg-main-black box-shadow ">
                 <div id="row_one" class="p-8">
-                    <div id="filter__heading" class="txt-4xl p-4 txt-main-white">Filters</div>
+                    <div id="filter__heading" class="txt-4xl p-4 txt-gray-400">Filters</div>
                     <div id="filter__clear" class="txt-3xl p-4 txt--warning pointer">Clear All</div>
                 </div>
                 <div id="row_two" class="p-8">
-                    <div id="price__heading" class="txt-4xl p-4 txt-main-white">Price</div>
+                    <div id="price__heading" class="txt-4xl p-4 txt-gray-400">Price</div>
                     <div id="price__slider">
-                        <div id="slider__value" class="txt-2xl txt-bold txt-main-white"></div>
+                        <div id="slider__value" class="txt-2xl txt-bold txt-gray-400 m-4"></div>
                         <div class="flex align-center">
-                            <div class="m-2 txt-2xl txt-main-white">0</div>
+                            <div class="m-2 txt-2xl txt-gray-400">0</div>
                             <input type="range" name="" min="0" max="15000" value="10" id="slider"
                                 onmousemove="changeValue()">
-                            <div class="m-2 txt-2xl txt-main-white">15000+</div>
+                            <div class="m-2 txt-2xl txt-gray-400">15000+</div>
                         </div>
                     </div>
                 </div>
                 <div id="row_three" class="p-8">
-                    <div id="category__heading" class="txt-4xl p-4 txt-main-white">Category</div>
+                    <div id="category__heading" class="txt-4xl p-4 txt-gray-400">Category</div>
                     <div id="category__list">
-                        <div class="list__wrapper flex flex-col bg-main-black">
+                        <div class="list__wrapper flex flex-col bg-main-black rounded-2xl">
 
                             <div class="list__select">
                                 <div class="flex justify-center align-center">
                                     <input type="checkbox" id="option_one" name="option_one" class="list__item__select"
                                         value="Bike">
-                                    <label class="txt-xl txt-main-white" for="option_one">Weights</label>
+                                    <label class="txt-xl txt-gray-400" for="option_one">Weights</label>
                                 </div>
 
                                 <div class="flex justify-center align-center">
                                     <input type="checkbox" id="option_two" name="option_two" class="list__item__select"
                                         value="Bike">
-                                    <label class="txt-xl txt-main-white" for="option_two">Equipments</label>
+                                    <label class="txt-xl txt-gray-400" for="option_two">Equipments</label>
                                 </div>
 
                                 <div class="flex justify-center align-center">
                                     <input type="checkbox" id="option_three" name="option_three"
                                         class="list__item__select" value="Bike">
-                                    <label class="txt-xl txt-main-white" for="option_three">Yoga Accessories</label>
+                                    <label class="txt-xl txt-gray-400" for="option_three">Yoga Accessories</label>
                                 </div>
                                 <div class="flex justify-center align-center">
                                     <input type="checkbox" id="option_four" name="option_four"
                                         class="list__item__select" value="Bike">
-                                    <label class="txt-xl txt-main-white" for="option_four">Clothing</label>
+                                    <label class="txt-xl txt-gray-400" for="option_four">Clothing</label>
                                 </div>
 
                             </div>
@@ -83,37 +83,37 @@
                     </div>
                 </div>
                 <div id="row_four" class="p-8">
-                    <div id="rating__heading" class="txt-4xl p-4 txt-main-white">Rating</div>
+                    <div id="rating__heading" class="txt-4xl p-4 txt-gray-400">Rating</div>
                     <div id="rating__radio-button">
                         <div class="flex">
                             <input type="radio" name="star" id="fourstar" class="radio">
-                            <label for="fourstar" class="txt-2xl txt-main-white">4 or more stars</label>
+                            <label for="fourstar" class="txt-2xl txt-gray-400">4 or more stars</label>
                         </div>
                         <div class="flex">
                             <input type="radio" name="star" id="threestar" class="radio">
-                            <label for="threestar" class="txt-2xl txt-main-white">3 or more stars</label>
+                            <label for="threestar" class="txt-2xl txt-gray-400">3 or more stars</label>
                         </div>
                         <div class="flex">
                             <input type="radio" name="star" id="twostar" class="radio">
-                            <label for="twostar" class="txt-2xl txt-main-white">2 or more stars</label>
+                            <label for="twostar" class="txt-2xl txt-gray-400">2 or more stars</label>
                         </div>
                         <div class="flex">
                             <input type="radio" name="star" id="onestar" class="radio">
-                            <label for="onestar" class="txt-2xl txt-main-white">1 or more stars</label>
+                            <label for="onestar" class="txt-2xl txt-gray-400">1 or more stars</label>
                         </div>
 
                     </div>
                 </div>
                 <div id="row_five" class="p-8">
-                    <div id="priceLtoH__heading" class="txt-4xl p-4 txt-main-white">Sort by</div>
+                    <div id="priceLtoH__heading" class="txt-4xl p-4 txt-gray-400">Sort by</div>
                     <div id="priceLtoH__radio-button" class="flex flex-col">
                         <div class="flex">
                             <input type="radio" name="sort" id="ltoh" class="radio">
-                            <label for="ltoh" class="txt-2xl txt-main-white">Low to High</label>
+                            <label for="ltoh" class="txt-2xl txt-gray-400">Low to High</label>
                         </div>
                         <div class="flex">
                             <input type="radio" name="sort" id="htol" class="radio">
-                            <label for="htol" class="txt-2xl txt-main-white">High to Low</label>
+                            <label for="htol" class="txt-2xl txt-gray-400">High to Low</label>
                         </div>
 
                     </div>
@@ -127,7 +127,7 @@
                 <div class="card__wrapper flex rounded-xl flex-col m-8 bg-main-white  box-shadow">
                     <div class="card__header flex flex-col relative">
                         <img class="card__image--tall pointer"
-                            src="https://images.unsplash.com/photo-1576678927484-cc907957088c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" />
+                            src="https://images.unsplash.com/photo-1603077492340-e6e62b2a688b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" />
 
                         <div class="card__headings">
                             <p class="txt-4xl txt-gray-100">Dumbells</p>
@@ -168,7 +168,7 @@
                 <div class="card__wrapper flex rounded-xl flex-col m-8 bg-main-white  box-shadow">
                     <div class="card__header flex flex-col relative">
                         <img class="card__image--tall pointer"
-                            src="https://images.unsplash.com/photo-1576678927484-cc907957088c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" />
+                            src="https://images.unsplash.com/photo-1603077492340-e6e62b2a688b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" />
 
                         <div class="card__headings">
                             <p class="txt-4xl txt-gray-100">Dumbells</p>
@@ -208,7 +208,7 @@
                 <div class="card__wrapper flex rounded-xl flex-col m-8 bg-main-white  box-shadow">
                     <div class="card__header flex flex-col relative">
                         <img class="card__image--tall pointer"
-                            src="https://images.unsplash.com/photo-1576678927484-cc907957088c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" />
+                            src="https://images.unsplash.com/photo-1603077492340-e6e62b2a688b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" />
 
                         <div class="card__headings">
                             <p class="txt-4xl txt-gray-100">Dumbells</p>
@@ -248,7 +248,7 @@
                 <div class="card__wrapper flex rounded-xl flex-col m-8 bg-main-white  box-shadow">
                     <div class="card__header flex flex-col relative">
                         <img class="card__image--tall pointer"
-                            src="https://images.unsplash.com/photo-1576678927484-cc907957088c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" />
+                            src="https://images.unsplash.com/photo-1603077492340-e6e62b2a688b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" />
 
                         <div class="card__headings">
                             <p class="txt-4xl txt-gray-100">Dumbells</p>
@@ -288,7 +288,7 @@
                 <div class="card__wrapper flex rounded-xl flex-col m-8 bg-main-white  box-shadow">
                     <div class="card__header flex flex-col relative">
                         <img class="card__image--tall pointer"
-                            src="https://images.unsplash.com/photo-1576678927484-cc907957088c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" />
+                            src="https://images.unsplash.com/photo-1603077492340-e6e62b2a688b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" />
 
                         <div class="card__headings">
                             <p class="txt-4xl txt-gray-100">Dumbells</p>
@@ -328,7 +328,7 @@
                 <div class="card__wrapper flex rounded-xl flex-col m-8 bg-main-white  box-shadow">
                     <div class="card__header flex flex-col relative">
                         <img class="card__image--tall pointer"
-                            src="https://images.unsplash.com/photo-1576678927484-cc907957088c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" />
+                            src="https://images.unsplash.com/photo-1603077492340-e6e62b2a688b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" />
 
                         <div class="card__headings">
                             <p class="txt-4xl txt-gray-100">Dumbells</p>
@@ -368,7 +368,7 @@
                 <div class="card__wrapper flex rounded-xl flex-col m-8 bg-main-white  box-shadow">
                     <div class="card__header flex flex-col relative">
                         <img class="card__image--tall pointer"
-                            src="https://images.unsplash.com/photo-1576678927484-cc907957088c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" />
+                            src="https://images.unsplash.com/photo-1603077492340-e6e62b2a688b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" />
 
                         <div class="card__headings">
                             <p class="txt-4xl txt-gray-100">Dumbells</p>
@@ -408,7 +408,7 @@
                 <div class="card__wrapper flex rounded-xl flex-col m-8 bg-main-white  box-shadow">
                     <div class="card__header flex flex-col relative">
                         <img class="card__image--tall pointer"
-                            src="https://images.unsplash.com/photo-1576678927484-cc907957088c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" />
+                            src="https://images.unsplash.com/photo-1603077492340-e6e62b2a688b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" />
 
                         <div class="card__headings">
                             <p class="txt-4xl txt-gray-100">Dumbells</p>
@@ -448,7 +448,7 @@
                 <div class="card__wrapper flex rounded-xl flex-col m-8 bg-main-white  box-shadow">
                     <div class="card__header flex flex-col relative">
                         <img class="card__image--tall pointer"
-                            src="https://images.unsplash.com/photo-1576678927484-cc907957088c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" />
+                            src="https://images.unsplash.com/photo-1603077492340-e6e62b2a688b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" />
 
                         <div class="card__headings">
                             <p class="txt-4xl txt-gray-100">Dumbells</p>
@@ -488,7 +488,7 @@
                 <div class="card__wrapper flex rounded-xl flex-col m-8 bg-main-white  box-shadow">
                     <div class="card__header flex flex-col relative">
                         <img class="card__image--tall pointer"
-                            src="https://images.unsplash.com/photo-1576678927484-cc907957088c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" />
+                            src="https://images.unsplash.com/photo-1603077492340-e6e62b2a688b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" />
 
                         <div class="card__headings">
                             <p class="txt-4xl txt-gray-100">Dumbells</p>
@@ -528,7 +528,7 @@
                 <div class="card__wrapper flex rounded-xl flex-col m-8 bg-main-white  box-shadow">
                     <div class="card__header flex flex-col relative">
                         <img class="card__image--tall pointer"
-                            src="https://images.unsplash.com/photo-1576678927484-cc907957088c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" />
+                            src="https://images.unsplash.com/photo-1603077492340-e6e62b2a688b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" />
 
                         <div class="card__headings">
                             <p class="txt-4xl txt-gray-100">Dumbells</p>
@@ -568,7 +568,7 @@
                 <div class="card__wrapper flex rounded-xl flex-col m-8 bg-main-white  box-shadow">
                     <div class="card__header flex flex-col relative">
                         <img class="card__image--tall pointer"
-                            src="https://images.unsplash.com/photo-1576678927484-cc907957088c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" />
+                            src="https://images.unsplash.com/photo-1603077492340-e6e62b2a688b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" />
 
                         <div class="card__headings">
                             <p class="txt-4xl txt-gray-100">Dumbells</p>
@@ -608,7 +608,7 @@
                 <div class="card__wrapper flex rounded-xl flex-col m-8 bg-main-white  box-shadow">
                     <div class="card__header flex flex-col relative">
                         <img class="card__image--tall pointer"
-                            src="https://images.unsplash.com/photo-1576678927484-cc907957088c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" />
+                            src="https://images.unsplash.com/photo-1603077492340-e6e62b2a688b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" />
 
                         <div class="card__headings">
                             <p class="txt-4xl txt-gray-100">Dumbells</p>
@@ -648,7 +648,7 @@
                 <div class="card__wrapper flex rounded-xl flex-col m-8 bg-main-white  box-shadow">
                     <div class="card__header flex flex-col relative">
                         <img class="card__image--tall pointer"
-                            src="https://images.unsplash.com/photo-1576678927484-cc907957088c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" />
+                            src="https://images.unsplash.com/photo-1603077492340-e6e62b2a688b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" />
 
                         <div class="card__headings">
                             <p class="txt-4xl txt-gray-100">Dumbells</p>
