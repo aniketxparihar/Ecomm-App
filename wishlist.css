@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Philosopher:wght@700&display=swap");
+
+/*Elements*/
+
+html {
+  height: 100%;
+  width: 100%;
+  font-size: 12px;
+  font-family: Philosophy, "Noto Sans";
+}
+body {
+  height: 100%;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  background-color: white;
+  overflow-x:hidden;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 2fr 8fr 2fr;
+  height: 10vh;
+  width: 100%;
+  align-items: center;
+  /* position: sticky;
+    top:0; */
+  backdrop-filter: blur(10px);
+  box-shadow: -0px 0px 20px 6px rgba(0, 0, 0, 0.4);
+}
+main {
+  height: 90vh;
+}
+#main__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#main__container::-webkit-scrollbar {
+  display: none;
+}
+/*Navbar*/
+#logo {
+  margin-left: 2rem;
+  font-size: 4rem;
+}
+#links {
+  width: 100%;
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+}
+.link {
+  margin-right: 2rem;
+  box-shadow: -0px 0px 20px 6px rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+}
+#search__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#search {
+  width: 20%;
+  min-width:10rem;
+  height:5rem;
+  font-size: 1.8rem;
+  outline: none;
+  border: none;
+  background: none;
+  box-shadow:inset -0px 0px 20px 6px rgba(0, 0, 0, 0.4);
+  transition: 0.5s;
+  border-radius:24px;
+}
+i {
+  display: inline-block;
+  vertical-align: center;
+}
+#search__icon {
+  color: var(--primary);
+  position: relative;
+  top: 4px; /*Change this to adjust the icon*/
+}
+.link {
+  position: relative;
+  font-size: 1.5rem;
+  top: 2px; /*Change this to adjust the icon*/
+}
+#signup {
+  border: none;
+  font-size: 1.5rem;
+  padding: 1rem 4rem;
+  border-radius: 8px;
+  width:max-content;
+}
+#search:active,
+#search:focus {
+  width: 40%;
+}
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--gray-400);
+  opacity: 1; /* Firefox */
+}
+
+/*Main Grid first */
+
+#wishlist__products {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: auto;
+  align-items: center;
+  border-radius: 25px;
+  padding: 2rem;
+  padding-left: auto;
+  padding-right: auto;
+  gap:4rem;
+}
+#wishlist__products::-webkit-scrollbar {
+  display: none;
+}
+
+#wishlist__heading {
+  text-align: center;
+  margin: 4rem;
+}
+
+.liked:hover {
+  transition: 0.4s;
+  animation-name: liked;
+  animation-duration: 0.4s;
+  animation-iteration-count: 2;
+}
+
+@keyframes liked {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.3);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.card__wrapper {
+  width: 30rem;
+  border-radius: 16px;
+  box-shadow: -0px 0px 20px 6px rgba(0, 0, 0, 0.4);
+}
+.card__image--tall {
+  height: 20rem;
+}
