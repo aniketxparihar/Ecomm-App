@@ -157,7 +157,7 @@ i {
 
 .card__wrapper {
   width: 30rem;
-  border-radius: 24px;
+  border-radius: 16px;
   box-shadow: -0px 0px 20px 6px rgba(0, 0, 0, 0.4);
 }
 .card__image--tall {
