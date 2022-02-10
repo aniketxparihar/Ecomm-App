@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://atomui.netlify.app/css/component.css">
+    <link rel="stylesheet" href="cart.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class="bg-main-black">
+    <nav class="bg-main-black">
+        <a id="logo" class="txt-gray-200 pointer">Fitkart</a>
+        <div id="search__container">
+            <!-- <i class="material-icons " id="search__icon">search</i> -->
+            <input type="text" id="search" placeholder="  Search here!">
+        </div>
+
+        <div id="links">
+            <button class="link bg--primary txt-main-black pointer txt-l " id="login">login</button>
+            <a class="link pointer" id="cart__page"><i
+                    class="badge__icon material-icons relative p-5 txt-gray-400">favorite_border<div
+                        class="badge--right badge--small txt-2xl txt-main-black bg--success flex justify-center align-center rounded-full absolute">
+                        4</div></i></a>
+            <a class="link pointer" id="cart__page"><i
+                    class="badge__icon material-icons relative p-5 txt-gray-400">shopping_cart<div
+                        class="badge--right badge--small txt-2xl txt-main-black bg--success flex justify-center align-center rounded-full absolute">
+                        4</div></i></a>
+        </div>
+    </nav>
+
+    <main>
+        <div id="wishlist__heading" class="h2 txt-gray-200 ">Your Cart <span class="txt--success">(4)</span></div>
+        <div id="main__container">
+            <div id="wishlist__products" class="p-2 ">
+
+                <div class="card__wrapper--horizontal  flex flex-col m-8 bg--main-black">
+                    <div class="card__header--row flex flex-col relative">
+                        <img class="card__image--horizontal pointer"
+                            src="https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" alt="" />
+
+                        <div class="card__headings--horizontal p-4">
+                            <p class="txt-2xl txt-gray-200">Dumbell</p>
+                            <p class="txt-2xl txt-gray-400">10 pounds(2)</p>
+                            <div class="card__footer flex align-center ">
+                                <p class="txt-2xl bold  txt-gray-200 ">₹300</p>
+                                <p class="txt-2xl bold m-2 txt-gray-400 line-through">₹600</p>
+                                <p class="txt-2xl bold m-2 txt-green-500">(50% Off)</p>
+                            </div>
+                            <div class="card__footer flex align-center ">
+                                <p
+                                    class="add txt-4xl bold m-2 txt-gray-800  rounded-full flex justify-center align-center bg--success pointer">
+                                    -</p>
+                                <p class="quantity txt-2xl bold  txt-gray-200 p-4 rounded-s ">4</p>
+                                <p
+                                    class="subtract txt-4xl bold m-2 bg--success rounded-full flex justify-center align-center pointer">
+                                    +</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="card__footer--horizontal flex align-center">
+                        <div class="card__links p-2 align-center flex">
+                            <div class="width-half m-2"><button
+                                    class="button width-full bg-red-400 p-4 txt-xl txt-bold txt-main-black rounded-xl flex justify-center align-center">Remove</button>
+                            </div>
+                            <div class="width-half m-2"><button
+                                    class="button width-full  bg-main-white p-4 txt-xl txt-bold txt-main-black rounded-xl flex justify-center align-center">Move
+                                    to Wishlist</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+              
+               
+            </div>
+
+            <div id="bill" class="bg-main-black box-shadow ">
+                <div class="p-6 border-bottom">
+                    <div  class="txt-4xl p-4 txt-gray-200">Price Details</div>
+                </div>
+                <div class="p-6 flex ">
+                    <div id="total__price__text" class="txt-2xl p-4 txt-gray-200">Price (4 items)</div>
+                    <div id="total__price__value" class="txt-3xl p-4 txt-gray-400">₹2400</div>
+                </div>
+                <div  class="p-6 flex">
+                    <div id="discount__text" class="txt-2xl p-4 txt-gray-200">Discount</div>
+                    <div id="discount__value" class="txt-3xl p-4 txt-gray-400">-₹1200</div>
+                </div>
+                <div   class="p-6 flex border-bottom">
+                    <div id="delivery__charges" class="txt-2xl p-4 txt-gray-200">Delivery Charges</div>
+                    <div id="delivery__value" class="txt-3xl p-4 txt-red-400">₹250</div>
+                </div>
+                <div  class="p-6 flex border-bottom">
+                    <div id="total__amount" class="txt-2xl p-4 txt-gray-200">Total Amount</div>
+                    <div id="total__amount__value" class="txt-3xl p-4 txt-green-400">₹1450</div>
+                </div>
+                <div  class="p-6 flex border-bottom">
+                    <div id="total__amount" class="txt-2xl p-4 txt-gray-200">You are saving ₹1200 with this order!</div>
+    
+                </div>
+                <div  class="p-6 flex ">
+                    <button class="button width-full  bg--success p-8 txt-xl txt-bold txt-main-black rounded-xl flex justify-center align-center">Place Order</button>
+                </div>
+                
+                
+            </div>
+    </main>
+
+    <script src="https://atomui.netlify.app/script.js"></script>
+    <script src="https://use.fontawesome.com/8cdd008a2c.js"></script>
+</body>
+
+</html>
