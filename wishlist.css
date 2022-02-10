@@ -98,6 +98,7 @@ i {
   font-size: 1.5rem;
   padding: 1rem 4rem;
   border-radius: 8px;
+  width:max-content;
 }
 #search:active,
 #search:focus {
