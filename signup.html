@@ -5,22 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+    <link rel="stylesheet" href="https://atomui.netlify.app/css/component.css">
     <link rel="stylesheet" href="signup.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 </head>
-<body>
-    <nav>
-        <div id="logo">Fitkart</div>
+<body class="bg-main-black">
+    <nav class="bg-main-black">
+        <div id="logo" class="txt-gray-400">Fitkart</div>
         <div id="search__container">
-            <i class="material-icons" id="search__icon">search</i>
-            <input type="text" id="search" placeholder="search here">
+            <input type="text" id="search" placeholder="  Search Here ">
         </div>
-        
+
         <div id="links">
-            <button class="link" id="signup">Login</button>
-            <div class="link" id="cart__page"><i class="material-icons">shopping_cart</i></div>
-            <div class="link" id="wishlist__page"><i class="material-icons">favorite_border</i></div>
+            <button class="link bg--primary txt-main-black txt-2xl pointer" id="login">Login</button>
+            <a class="link pointer" id="cart__page"><i class="badge__icon material-icons relative p-5 txt-gray-400">shopping_cart<div
+                        class="badge--right badge--small txt-2xl txt-main-black bg--success flex justify-center align-center rounded-full absolute">
+                        4</div></i></a>
+            <a class="link pointer" id="cart__page"><i class="badge__icon material-icons relative p-5 txt-gray-400">favorite_border<div
+                        class="badge--right badge--small txt-2xl txt-main-black bg--success flex justify-center align-center rounded-full absolute">
+                        4</div></i></a>
         </div>
     </nav>
     
@@ -32,12 +36,12 @@
           
           <div id="email">
               <label for="email__input">Email Address</label>
-              <input type="text" id="email__input">
+              <input type="text" id="email__input" class="txt-2xl">
               
           </div>
           <div id="password">
               <label for="password__input">Password</label>
-              <input type="password" id="password__input">
+              <input type="password" id="password__input" class="txt-2xl">
           </div>
           <div id="footer">
                <div id="termsAndCondition__container">
