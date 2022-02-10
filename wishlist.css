@@ -32,8 +32,7 @@ nav{
     align-items: center;
     /* position: sticky;
     top:0; */
-    backdrop-filter: blur(10px);
-    box-shadow: -0px 0px 20px 6px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px); box-shadow: -0px 0px 20px 6px rgba(0, 0, 0, 0.4);
     
 }
 main{
@@ -41,11 +40,10 @@ main{
 }
 #main__container{
     width:100%;
-    display:grid;
-    grid-template-columns: 2fr 7fr;
-    position: relative;
-    overflow: hidden;
-    position: sticky;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 #main__container::-webkit-scrollbar{
     display: none;
@@ -64,8 +62,6 @@ main{
 }
 .link{
     margin-right:2rem;
-    box-shadow: -0px 0px 20px 6px rgba(0, 0, 0, 0.4);
-    border-radius:4px;
 }
 #search__container{
     width: 100%;
@@ -74,15 +70,13 @@ main{
 }
 #search{
     width:20%;
-    height:4rem;
+    height:2rem;
     font-size:1.8rem;
     outline: none;
     border: none;
-    background: var(--gray-800);
-    box-shadow: inset -0px 0px 20px 6px rgba(0, 0, 0, 0.4);
+    background: none;
+    
     transition:.5s;
-    color: var(--gray-400);
-    border-radius:8px;
 }
 i{
     display: inline-block;
@@ -91,13 +85,12 @@ i{
 #search__icon {
     color:var(--primary);
     position: relative;
-    top: 6px; /*Change this to adjust the icon*/
+    top: 4px; /*Change this to adjust the icon*/
 }
 .link {
     position: relative; 
     font-size:1.5rem;
-    top: 2px; 
-    border-radius:50%;/*Change this to adjust the icon*/
+    top: 2px; /*Change this to adjust the icon*/
 }
 #signup{
     border:none;
@@ -111,75 +104,34 @@ i{
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: var(--gray-400);
   opacity: 1; /* Firefox */
-  border-left:4px;
 }
 
 /*Main Grid first */
 
-#filters{ 
-    height:90%;
-    display: flex;
-    flex-direction: column;
-    min-width:30rem;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    position: sticky;
-    top:0;
-    border-radius:8px;
-    margin-top:5rem;
-    margin-left:2rem;
-    box-shadow: -0px 0px 20px 6px rgba(0, 0, 0, 0.4);
-}
-
-#row_one{
-display: flex;
-margin:2rem 0;
-}
-#filter__clear{
-    margin-left:auto;
-}
-#row_two{
-    display: flex;
-    flex-direction: column;margin:1rem 0;
-}
-#row_three{
-    display: flex;
-    flex-direction: column;margin:1rem 0;
-}
-
-#row_four{
-display: flex;
-    flex-direction: column;margin:1rem 0;
-}
-#row_five{
-    display: flex;
-    flex-direction: column;margin:1rem 0;
-}
-#rating__radio-button{
-    display: flex;
-    flex-direction: column;
-}
-.radio{
-    height: 15px;
-    margin-right: 15px;
-    position: relative;
-    top:6px;
-    width: 2rem;
-    padding:2rem;
-}
-#products{
-    height:100%;
+#wishlist__products{
+    height:80%;
+    width:60%;
     display:flex;
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: center;
     overflow:auto;
     align-items: center;
-    margin-top:0rem;
-    margin-left:10rem;
+    border-radius:25px;
+     box-shadow:inset  -0px 0px 20px 6px rgba(0, 0, 0, 0.4);
+     padding:2rem;
+     padding-left:auto;
+     padding-right:auto;
 }
-#products::-webkit-scrollbar{
+#wishlist__products::-webkit-scrollbar{
     display:none;
+}
+
+#wishlist__heading{
+text-align: center;
+margin:4rem;
+}
+#addtocart{
+    margin-bottom:2rem;
 }
 .liked:hover{
     transition:0.4s;
@@ -196,16 +148,6 @@ display: flex;
 
 .card__wrapper{
     width:30rem;
-    border-radius:16px;
+    border-radius:24px;
     box-shadow: -0px 0px 20px 6px rgba(0, 0, 0, 0.4);
-  
-}
-#addtocart{
-    margin-bottom:2rem;
-    margin-left:auto;
-    margin-right:auto;
-}
-
-.card__image--tall{
-    height:20rem;
 }
