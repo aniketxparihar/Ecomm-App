@@ -82,7 +82,7 @@ main{
     box-shadow: inset -0px 0px 20px 6px rgba(0, 0, 0, 0.4);
     transition:.5s;
     color: var(--gray-400);
-    border-radius:16px;
+    border-radius:24px;
 }
 i{
     display: inline-block;
