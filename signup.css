@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Philosopher:wght@700&display=swap');
+
+
+
+/*Elements*/
+
+html{
+    height:100%;
+    width:100%;
+    font-size: 12px;
+    font-family:Philosophy,'Noto Sans';
+}
+body{
+    height:100%;
+    border:0;
+    margin:0;
+    padding:0;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background-color: white;
+    }
+    
+nav{
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr;
+    height:10vh;
+    width:100%;
+    align-items: center;
+    /* position: sticky;
+    top:0; */
+    backdrop-filter: blur(10px);
+    box-shadow: -0px 0px 20px 6px rgba(0, 0, 0, 0.4);
+    
+}
+main{
+    height:90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Navbar*/
+#logo{
+    margin-left:2rem;
+    font-size: 4rem;
+}
+#links{
+    width:100%;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    
+}
+.link{
+    margin-right:2rem;
+    box-shadow: -0px 0px 20px 6px rgba(0, 0, 0, 0.4);
+    border-radius:4px;
+}
+#search__container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#search{
+    width:20%;
+    height:5rem;
+    font-size:1.8rem;
+    outline: none;
+    border: none;
+    background: var(--gray-800);
+    box-shadow: inset -0px 0px 20px 6px rgba(0, 0, 0, 0.4);
+    transition:.5s;
+    color: var(--gray-400);
+    border-radius:24px;
+}
+i{
+    display: inline-block;
+    vertical-align: center;
+}
+#search__icon {
+    color:var(--primary);
+    position: relative;
+    top: 6px; /*Change this to adjust the icon*/
+}
+.link {
+    position: relative; 
+    font-size:1.5rem;
+    top: 2px; 
+    border-radius:50%;/*Change this to adjust the icon*/
+}
+#login{
+    border:none;
+    font-size:1.5rem;
+    padding:1rem 4rem;
+    border-radius: 8px;
+}
+#search:active,#search:focus{
+    width:40%;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--gray-400);
+  opacity: 1; /* Firefox */
+  border-left:4px;
+}
+
+/*Main Grid first */
+
+#form__container{
+    min-width: 50rem;
+    height:50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:2rem;
+    border-radius:24px;
+    box-shadow: -0px 0px 20px 6px rgba(0, 0, 0, 0.4);
+     box-shadow: -0px 0px 20px 6px rgba(0, 0, 0, 0.4),-7px 7px 0 var(--dark-blue-600),-14px 14px 0 var(--dark-blue-800);
+}
+#heading{
+    font-size:3rem;
+    padding:1rem;
+    font-weight: 900;
+    color:var(--gray-400);
+}
+form{
+    width:100%;
+    height:max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top:6rem;
+     box-sizing:border-box;
+     color:var(--gray-400);
+     
+}
+#email{
+    height:6rem;
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    margin-bottom: 2rem;
+}
+
+#password{
+    height:6rem;
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    margin-bottom: 2rem;
+}
+
+#footer{
+    width:100%;
+    display: flex;
+    height:6rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+#termsAndCondition__container{
+
+    display: flex;
+    flex-direction: row;
+}
+#termsAndCondition{
+    margin:0;
+    padding:0;
+    position:relative;
+    margin-right:8px;
+    top:6px;
+    width:20px;
+    height: 20px;
+}
+#email__input{
+      width:100%;
+     box-sizing:border-box;
+     height:3rem;
+     outline:none;
+     border:0;
+     border-bottom:2px solid var(--primary);
+     background: none;
+     color:var(--gray-400);
+}
+#password__input{
+      width:100%;
+     box-sizing:border-box;
+     height:3rem;
+     outline:none;
+     border:0;
+     border-bottom:2px solid var(--primary);
+     background: none;
+     color:var(--gray-400);
+}
+label{
+    font-size:2rem;
+}
+#signup__button{
+  border-radius:8px;
+    border:none;
+    padding:1.5rem;
+    outline:none;
+    background: none;
+    color:var(--main-black);
+    font-size:2rem;
+    background-color: var(--primary);
+    box-shadow: -7px 7px 0 var(--dark-blue-600),-14px 14px 0 var(--dark-blue-800);
+    transition:1s;
+    cursor:pointer;
+}
+#signup__button:hover{
+    transform: translate(-10px,10px);
+    box-shadow: 0px 0px 0 black;
+   
+}
