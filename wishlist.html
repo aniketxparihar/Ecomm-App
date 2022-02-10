@@ -21,10 +21,11 @@
 
         <div id="links">
             <button class="link bg--primary txt-main-black pointer txt-l" id="signup">Signup</button>
-            <a class="link pointer" id="cart__page"><i class="badge__icon material-icons relative p-5 txt-gray-400">shopping_cart<div
+            
+            <a class="link pointer" id="cart__page"><i class="badge__icon material-icons relative p-5 txt-gray-400">favorite_border<div
                         class="badge--right badge--small txt-2xl txt-main-black bg--success flex justify-center align-center rounded-full absolute">
                         4</div></i></a>
-            <a class="link pointer" id="cart__page"><i class="badge__icon material-icons relative p-5 txt-gray-400">favorite_border<div
+            <a class="link pointer" id="cart__page"><i class="badge__icon material-icons relative p-5 txt-gray-400">shopping_cart<div
                         class="badge--right badge--small txt-2xl txt-main-black bg--success flex justify-center align-center rounded-full absolute">
                         4</div></i></a>
         </div>
@@ -32,9 +33,89 @@
 
     <main>
         <div id="main__container" class="bg-main-black">
-            <div id="wishlist__heading" class="h2 txt-gray-400 ">Your Wishlist!😎🥰😍</div>
-            <div id="wishlist__products" class="p-2  box-shadow">
+            <div id="wishlist__heading" class="h2 txt-gray-400 ">Your Wishlist</div>
+            <div id="wishlist__products" class="p-2 ">
                 
+                <div class="card__wrapper flex rounded-xl flex-col m-8 ">
+                    <div class="card__header flex flex-col relative">
+                        <img class="card__image--tall pointer"
+                            src="https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" alt="" />
+
+                        <div class="card__headings">
+                            <p class="txt-4xl txt-gray-300">Dumbells</p>
+                            <p class="txt-2xl txt-gray-400">10 pounds (2)</p>
+                        </div>
+
+                    </div>
+
+                    <div class="card__footer  m-2 flex align-center ">
+                        <p class="txt-2xl bold txt-gray-300 m-2">₹300</p>
+                        <p class="txt-2xl bold m-0 txt-gray-400 line-through">₹600</p>
+                        <p class="txt-2xl bold m-2 txt-green-500">(50% Off)</p>
+                        <i class="liked material-icons pointer txt-pink-600">favorite</i>
+                    </div>
+                    <div id="buynow" class="card__links p-4 align-center flex">
+                        <button
+                            class="button  p-4 txt-2xl width-full txt-bold bg--primary rounded-m flex justify-center align-center">Buy
+                            Now</button>
+                    </div>
+                    <div id="addtocart"class="card__links p-4 align-center flex">
+                        <button
+                            class="button  p-4 txt-2xl width-full txt-bold border--primary b-2 border-solid txt--primary bg-none rounded-xl flex justify-center align-center"><i
+                                class="button__icon material-icons">shopping_cart</i>Add to cart</button>
+                    </div>
+
+                    <div class="card__icons flex justify-center align-center hidden">
+                        <a class="heart rounded-full pointer flex justify-center align-center "><i
+                                class="sidebar__icon material-icons txt-l txt-main-white">favorite_border</i></a>
+                        <a class="share rounded-full pointer flex justify-center align-center"><i
+                                class="sidebar__icon material-icons txt-l txt-gray-200">share</i></a>
+                        <a class="more rounded-full pointer flex justify-center align-center"><i
+                                class="sidebar__icon material-icons  txt-l txt-gray-200">more_vert</i></a>
+                    </div>
+
+
+                </div>
+                <div class="card__wrapper flex rounded-xl flex-col m-8 ">
+                    <div class="card__header flex flex-col relative">
+                        <img class="card__image--tall pointer"
+                            src="https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" alt="" />
+
+                        <div class="card__headings">
+                            <p class="txt-4xl txt-gray-300">Dumbells</p>
+                            <p class="txt-2xl txt-gray-400">10 pounds (2)</p>
+                        </div>
+
+                    </div>
+
+                    <div class="card__footer  m-2 flex align-center ">
+                        <p class="txt-2xl bold txt-gray-300 m-2">₹300</p>
+                        <p class="txt-2xl bold m-0 txt-gray-400 line-through">₹600</p>
+                        <p class="txt-2xl bold m-2 txt-green-500">(50% Off)</p>
+                        <i class="liked material-icons pointer txt-pink-600">favorite</i>
+                    </div>
+                    <div id="buynow" class="card__links p-4 align-center flex">
+                        <button
+                            class="button  p-4 txt-2xl width-full txt-bold bg--primary rounded-m flex justify-center align-center">Buy
+                            Now</button>
+                    </div>
+                    <div id="addtocart"class="card__links p-4 align-center flex">
+                        <button
+                            class="button  p-4 txt-2xl width-full txt-bold border--primary b-2 border-solid txt--primary bg-none rounded-xl flex justify-center align-center"><i
+                                class="button__icon material-icons">shopping_cart</i>Add to cart</button>
+                    </div>
+
+                    <div class="card__icons flex justify-center align-center hidden">
+                        <a class="heart rounded-full pointer flex justify-center align-center "><i
+                                class="sidebar__icon material-icons txt-l txt-main-white">favorite_border</i></a>
+                        <a class="share rounded-full pointer flex justify-center align-center"><i
+                                class="sidebar__icon material-icons txt-l txt-gray-200">share</i></a>
+                        <a class="more rounded-full pointer flex justify-center align-center"><i
+                                class="sidebar__icon material-icons  txt-l txt-gray-200">more_vert</i></a>
+                    </div>
+
+
+                </div>
                 <div class="card__wrapper flex rounded-xl flex-col m-8 ">
                     <div class="card__header flex flex-col relative">
                         <img class="card__image--tall pointer"
