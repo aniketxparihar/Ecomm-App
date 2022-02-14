@@ -1,47 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Philosopher:wght@700&display=swap");
 
 /*Elements*/
-
 html {
-  height: 100%;
   width: 100%;
   font-size: 8px;
   font-family: Philosophy, "Noto Sans";
 }
 body {
-  height: 100%;
+  height: 100vh;
   border: 0;
   margin: 0;
   padding: 0;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-items: center;
-  background-color: white;
-  overflow-x:hidden;
 }
 
 nav {
   display: grid;
-  grid-template-columns: 2fr 8fr 2fr;
-  height: 10vh;
+  grid-template-columns: 3fr 6fr 3fr;
+  grid-template-rows: 1fr;
+  min-height: 10vh;
   width: 100%;
   align-items: center;
-  /* position: sticky;
-    top:0; */
   backdrop-filter: blur(10px);
   box-shadow: -0px 0px 20px 6px rgba(0, 0, 0, 0.4);
+  justify-items: center;
+  align-items: center;
 }
 main {
   height: 90vh;
 }
 #main__container {
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  overflow-y: hidden;
 }
 #main__container::-webkit-scrollbar {
   display: none;
@@ -54,30 +47,33 @@ main {
 #links {
   width: 100%;
   display: flex;
-  /* justify-content: space-around; */
   align-items: center;
+  justify-content: center;
+  margin-left: auto;
 }
 .link {
   margin-right: 2rem;
   box-shadow: -0px 0px 20px 6px rgba(0, 0, 0, 0.4);
-  border-radius: 50%;
+  border-radius: 4px;
 }
 #search__container {
   width: 100%;
   display: flex;
   justify-content: center;
+  border-radius: 4px;
+  box-shadow: inset -0px 0px 20px 6px rgba(0, 0, 0, 0.4);
+  margin-right: 2rem;
 }
-#search {
-  width: 20%;
-  min-width:10rem;
-  height:5rem;
+#search__input {
+  width: 90%;
+  min-width: 10rem;
+  height: 5rem;
   font-size: 1.8rem;
   outline: none;
   border: none;
-  background: none;
-  box-shadow:inset -0px 0px 20px 6px rgba(0, 0, 0, 0.4);
   transition: 0.5s;
-  border-radius:24px;
+  color: var(--gray-400);
+  background: none;
 }
 i {
   display: inline-block;
@@ -86,32 +82,31 @@ i {
 #search__icon {
   color: var(--primary);
   position: relative;
-  top: 4px; /*Change this to adjust the icon*/
+  margin-left: auto;
+  margin-right: 0;
+  box-shadow: inset -0px 0px 20px 6px rgba(0, 0, 0, 0.4);
 }
 .link {
   position: relative;
   font-size: 1.5rem;
-  top: 2px; /*Change this to adjust the icon*/
+  top: 2px;
+  border-radius: 50%;
 }
-#signup {
+#signout {
   border: none;
   font-size: 1.5rem;
   padding: 1rem 4rem;
+  width: max-content;
   border-radius: 8px;
-  width:max-content;
 }
-#search:active,
-#search:focus {
-  width: 40%;
-}
+
 ::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: var(--gray-400);
-  opacity: 1; /* Firefox */
+  opacity: 1;
+  border-left: 4px;
 }
 
 /*Main Grid first */
-
 #wishlist__products {
   height: 100%;
   width: 100%;
@@ -124,7 +119,7 @@ i {
   padding: 2rem;
   padding-left: auto;
   padding-right: auto;
-  gap:4rem;
+  gap: 4rem;
 }
 #wishlist__products::-webkit-scrollbar {
   display: none;
