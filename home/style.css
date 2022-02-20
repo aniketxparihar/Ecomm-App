@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Philosopher:wght@700&display=swap");
-
+@import url("../css/font.css");
+@import url("../css/nav.css");
 html {
   width: 100%;
   font-size: 8px;
-  font-family: Philosophy, "Noto Sans";
+  font-family: "Noto Sans";
 }
 body {
   height: 100vh;
@@ -11,12 +11,12 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
+  position: relative;
 }
 
 nav {
-  display: grid;
-  grid-template-columns: 3fr 6fr 3fr;
-  grid-template-rows: 1fr;
+  display: flex;
+  flex-direction: row;
   min-height: 10vh;
   width: 100%;
   align-items: center;
@@ -24,7 +24,10 @@ nav {
   box-shadow: -0px 0px 20px 6px rgba(0, 0, 0, 0.4);
   justify-items: center;
   align-items: center;
+  position: fixed;
+  z-index: 99999;
 }
+
 main {
   height: 90vh;
   display: flex;
@@ -39,17 +42,20 @@ main {
   position: relative;
   overflow: auto;
   position: sticky;
+  
 }
 #main__container::-webkit-scrollbar {
   display: none;
 }
 /*Navbar*/
 #logo {
+  text-align: center;
   margin-left: 2rem;
+  margin-right: 2rem;
   font-size: 4rem;
 }
 #links {
-  width: 100%;
+  width: fit-content;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -61,15 +67,17 @@ main {
   border-radius: 4px;
 }
 #search__container {
-  width: 100%;
+  width: 50%;
   display: flex;
   justify-content: center;
+  align-items: center;
   border-radius: 4px;
   box-shadow: inset -0px 0px 20px 6px rgba(0, 0, 0, 0.4);
-  margin-right: 2rem;
+  margin-left: auto;
 }
+
 #search__input {
-  width: 90%;
+  width: 80%;
   min-width: 10rem;
   height: 5rem;
   font-size: 1.8rem;
@@ -113,47 +121,26 @@ i {
 main {
   height: max-content;
   width: 100%;
-  display: grid;
-  margin-bottom: 5rem;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: repeat(4, 1fr);
-  row-gap: 4rem;
-  grid-template-areas:
-    ".... new__arrival new__arrival  ...."
-    ".... new__arrival new__arrival  ...."
-    ".... categories categories  ....."
-    ".... categories categories  ....."
-    ".... collections collections  ....."
-    ".... collections collections  .....";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10rem;
+  
 }
 #categories {
-  min-width: 80rem;
-  grid-area: categories;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 3rem;
-  justify-items: center;
+  
+  width: 80%;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
 }
-#collections {
-  min-width: 100rem;
-  grid-area: collections;
-  width: 100%;
-  border-radius: 20px;
-  box-shadow: 0 8px 10px -5px rgb(0 0 0 / 16%), 0 16px 24px 2px rgb(0 0 0 / 11%),
-    0 6px 30px 5px rgb(0 0 0 / 10%);
-}
-#new__arrivals {
-  min-width: 80rem;
-  grid-area: new__arrival;
-  width: 100%;
-  border-radius: 20px;
-  box-shadow: 0 8px 10px -5px rgb(0 0 0 / 16%), 0 16px 24px 2px rgb(0 0 0 / 11%),
-    0 6px 30px 5px rgb(0 0 0 / 10%);
-}
+
 
 #category {
+  width:50rem;
   border-radius: 15px;
   display: flex;
   justify-content: center;
@@ -161,45 +148,21 @@ main {
   cursor: pointer;
   transition: 1s;
   box-shadow: -0px 0px 20px 6px rgba(0, 0, 0, 0.4);
+  margin:2rem;
 }
-#collection {
-  border-radius: 15px;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  cursor: pointer;
-  transition: 1s;
-  box-shadow: -0px 0px 20px 6px rgba(0, 0, 0, 0.4);
-}
-#new__arrival {
-  border-radius: 15px;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  cursor: pointer;
-  transition: 1s;
-  box-shadow: -0px 0px 20px 6px rgba(0, 0, 0, 0.4);
-}
+
 #category:hover {
   box-shadow: 0px 16px 24px 2px rgba(0, 0, 0, 0.14),
     0px 6px 30px 5px rgba(0, 0, 0, 0.12), 0px 8px 10px -7px rgba(0, 0, 0, 0.2);
 }
-#collection:hover {
-  box-shadow: 0px 16px 24px 2px rgba(0, 0, 0, 0.14),
-    0px 6px 30px 5px rgba(0, 0, 0, 0.12), 0px 8px 10px -7px rgba(0, 0, 0, 0.2);
-}
-#new__arrival:hover {
-  box-shadow: 0px 16px 24px 2px rgba(0, 0, 0, 0.14),
-    0px 6px 30px 5px rgba(0, 0, 0, 0.12), 0px 8px 10px -7px rgba(0, 0, 0, 0.2);
-}
+
 #tag__name {
   position: absolute;
   bottom: 0%;
   width: 100%;
   height: 20%;
-  background-color: var(--primary);
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  background-color: var(--main-black);
+  border-radius: 15px;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -220,24 +183,73 @@ main {
   border-radius: 15px;
   filter: grayscale(0.2);
 }
-#collection__image {
-  height: 100%;
-  width: 100%;
-  border-radius: 15px;
-}
-#new__arrival__image {
-  height: 100%;
-  width: 100%;
-  border-radius: 15px;
-}
+
 
 header {
-  min-height: 40rem;
+  min-height: fit-content;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10rem;
+  margin-top: 20rem;
+}
+
+.hamburger{
+  display: none;
+}
+.hidden__menu{
+  height:10vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  position: fixed;
+  top:0rem;
+  right:0rem;
+  z-index: 99999;
+  backdrop-filter: blur(10px);
+  display: none;
+  transition: 0.5s;
+}
+.hidden__link{
+  margin:2rem;
+}
+.close{
+  background-color:var(--gray-700);
+  border-radius: 50%;
+}
+@media screen and (max-width: 1000px) {
+ header {
+  min-height: max-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10rem;
+  
+}
+.headings{
+  margin-top:10rem;
+}
+.link{
+  display: none;
+}
+.hamburger{
+  display: block;
+}
+}
+
+.landing__page__image{
+z-index: -100;
+position: absolute;
+
+top:10rem;
+width: 100%;
+height: auto;
 }
 #heading {
   font-size: 5rem;
