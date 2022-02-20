@@ -5,36 +5,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fitkart</title>
+    <title></title>
     <link rel="stylesheet" href="https://atomui.netlify.app/css/component.css">
     <link rel="stylesheet" href="cart.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
-<body class="bg-main-black">
-    <nav class="bg-main-black">
-        <a href="index.html" id="logo" class="txt-gray-200">Fitkart</a>
+<body class="">
+    <nav class="">
+        <a href="../home/index.html" id="logo" class="txt-gray-200">Fitkart</a>
         <div id="search__container">
-            <input type="text" id="search__input" placeholder="  Search Here ">
-            <i id="search__icon" class="badge__icon material-icons relative p-4 bg-gray-700 rounded-s txt-gray-400 pointer">search</i>
+            <input type="text" id="search__input" placeholder="  Search Here " />
+            <i id="search__icon"
+                class="badge__icon material-icons relative p-4 bg-gray-700 rounded-s txt-gray-400 pointer">search</i>
         </div>
 
         <div id="links">
-            <a href="login.html" class="link bg--primary  txt-main-black txt-2xl pointer" id="login">Login</a>
-            
-            <a class="link pointer" id="cart__page" href="./wishlist.html"><i class="badge__icon material-icons relative p-5 txt-gray-400">favorite_border<div
+            <a href="../login/login.html" class="link bg--secondary  txt-main-black txt-2xl pointer" id="signout">Sign out</a>
+
+            <a class="link pointer" id="cart__page" href="../wishlist/wishlist.html"><i
+                    class="badge__icon material-icons relative p-5 txt-gray-400">favorite_border
+                    <div
                         class="badge--right badge--small txt-2xl txt-main-black bg--success flex justify-center align-center rounded-full absolute">
-                        4</div></i></a>
-            <a class="link pointer" id="cart__page" href="./cart.html"><i class="badge__icon material-icons relative p-5 txt-gray-400">shopping_cart<div
+                        4
+                    </div>
+                </i></a>
+            <a class="link pointer" id="cart__page" href="../cart/cart.html"><i
+                    class="badge__icon material-icons relative p-5 txt-gray-400">shopping_cart
+                    <div
                         class="badge--right badge--small txt-2xl txt-main-black bg--success flex justify-center align-center rounded-full absolute">
-                        4</div></i></a>
-            
+                        4
+                    </div>
+                </i></a>
+                <div class="link pointer hamburger" ><i
+                    class="badge__icon material-icons relative p-5 txt-gray-400">menu
+                </i></div>
         </div>
-        
     </nav>
+<div class="hidden__menu">
+                
+            <a href="../login/login.html" class="hidden__link bg--secondary  txt-main-black txt-2xl pointer" id="signout">Sign out</a>
+
+            <a class="hidden__link pointer" id="cart__page" href="../wishlist/wishlist.html"><i
+                    class="badge__icon material-icons relative p-5 txt-gray-400">favorite_border
+                    <div
+                        class="badge--right badge--small txt-2xl txt-main-black bg--success flex justify-center align-center rounded-full absolute">
+                        4
+                    </div>
+                </i></a>
+            <a class="hidden__link pointer" id="cart__page" href="../cart/cart.html"><i
+                    class="badge__icon material-icons relative p-5 txt-gray-400">shopping_cart
+                    <div
+                        class="badge--right badge--small txt-2xl txt-main-black bg--success flex justify-center align-center rounded-full absolute">
+                        4
+                    </div>
+                </i></a>
+                <div class="hidden__link pointer close" ><i
+                    class="badge__icon material-icons relative p-5 txt-gray-400">close
+                </i></div>
+    </div>
 
     <main>
-        <div id="wishlist__heading" class="h2 txt-gray-200 ">Your Cart <span class="txt-yellow-400">(4)</span></div>
+        <div id="wishlist__heading" class="h2 txt-gray-200 ">Your Cart <span class="txt-gray-400">(4)</span></div>
         <div id="main__container">
             <div id="wishlist__products" class="p-2 ">
 
@@ -45,19 +77,19 @@
 
                         <div class="card__headings--horizontal p-4">
                             <p class="txt-4xl txt-gray-200">Dumbell</p>
-                            <p class="txt-2xl txt-gray-400">10 pounds(2)</p>
+                            <p class="txt-2xl txt-gray-400"></p>
                             <div class="card__footer flex align-center ">
                                 <p class="txt-4xl bold  txt-gray-200 ">₹300</p>
-                                <p class="txt-2xl bold m-2 txt-red-400 line-through">₹600</p>
+                                <p class="txt-4xl bold m-2 txt-gray-400 line-through">₹600</p>
                                 <p class="txt-3xl bold m-2 txt-yellow-500">(50% Off)</p>
                             </div>
                             <div class="card__footer flex align-center ">
                                 <p
-                                    class="add txt-4xl bold m-2 txt-gray-800  rounded-full flex justify-center align-center bg-pink-500 pointer">
+                                    class="add txt-4xl bold m-2 txt-gray-800  rounded-full flex justify-center align-center bg-pink-50 pointer">
                                     -</p>
                                 <p class="quantity txt-2xl bold  txt-gray-200 p-4 rounded-s ">4</p>
                                 <p
-                                    class="subtract txt-4xl bold m-2 bg-main-white rounded-full flex justify-center bg-pink-500 align-center pointer">
+                                    class="subtract txt-4xl bold m-2 bg-main-white rounded-full flex justify-center bg-pink-50 align-center pointer">
                                     +</p>
                             </div>
                         </div>
@@ -69,7 +101,7 @@
                                     class="button width-full bg-gray-300 p-4 txt-2xl txt-bold txt-main-black rounded-xl flex justify-center align-center">Remove</button>
                             </div>
                             <div class="width-half m-2"><button
-                                    class="button width-full   bg-light-blue-400  p-4 txt-2xl txt-bold txt-main-black rounded-xl flex justify-center align-center">Move
+                                    class="button width-full   bg--primary  p-4 txt-2xl txt-bold txt-main-black rounded-xl flex justify-center align-center">Move
                                     to Wishlist</button>
                             </div>
                         </div>
@@ -114,7 +146,7 @@
                 
             </div>
     </main>
-
+    <script src="../script.js"></script>
     <script src="https://atomui.netlify.app/script.js"></script>
     <script src="https://use.fontawesome.com/8cdd008a2c.js"></script>
 </body>
