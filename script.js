@@ -7,10 +7,12 @@ const filters = document.querySelector("#filters");
 hamburger.addEventListener('click', (e) => {
     e.preventDefault();
     hiddenMenu.style.display = "flex";
+    filters.style.left="0rem";
 })
 close.addEventListener('click', (e) => {
     e.preventDefault();
-    hiddenMenu.style.display = "none";
+    hiddenMenu.style.display = "none"; 
+    filters.style.left="-100rem";
 })
 const modalOpen = () => {
         modalScreen.style.display = "block";
