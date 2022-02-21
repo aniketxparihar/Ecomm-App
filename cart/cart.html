@@ -66,7 +66,8 @@
     </div>
 
     <main>
-        <div id="wishlist__heading" class="h2 txt-gray-200 ">Your Cart <span class="txt-gray-400">(4)</span></div>
+        <div id="wishlist__heading" class="h2 txt-gray-200 ">Your Cart <i id="share__icon"
+                class="material-icons pointer txt--secondary">share</i></div>
         <div id="main__container">
             <div id="wishlist__products" class="p-2 ">
 
@@ -98,11 +99,10 @@
                     <div class="card__footer--horizontal flex align-center">
                         <div class="card__links p-2 align-center flex">
                             <div class="width-half m-2"><button
-                                    class="button width-full bg-gray-300 p-4 txt-2xl txt-bold txt-main-black rounded-xl flex justify-center align-center">Remove</button>
+                                    class="button width-full  bg-gray-300 p-4 txt-2xl txt-bold txt-main-black rounded-xl flex justify-center align-center">Remove</button>
                             </div>
                             <div class="width-half m-2"><button
-                                    class="button width-full   bg--primary  p-4 txt-2xl txt-bold txt-main-black rounded-xl flex justify-center align-center">Move
-                                    to Wishlist</button>
+                                    class="button width-full  bg-gray-300  p-4 txt-2xl txt-bold txt-main-black rounded-xl flex justify-center align-center">Wishlist</button>
                             </div>
                         </div>
                     </div>
@@ -131,16 +131,25 @@
                     <div id="delivery__charges" class="txt-2xl p-4 txt-gray-200">Delivery Charges</div>
                     <div id="delivery__value" class="txt-3xl p-4 txt-yellow-400">+ ₹250</div>
                 </div>
+                 <div   class="p-6 flex border-bottom">
+                    <div id="delivery__charges" class="txt-2xl p-4 txt-gray-200">Coupon Discount</div>
+                    <div id="delivery__value" class="txt-3xl p-4 txt-gray-400">- ₹400</div>
+                </div>
                 <div  class="p-6 flex border-bottom">
                     <div id="total__amount" class="txt-2xl p-4 txt-gray-200">Total Amount</div>
-                    <div id="total__amount__value" class="txt-3xl p-4 txt-green-400">₹1450</div>
+                    <div id="total__amount__value" class="txt-3xl p-4 txt-green-400">₹1050</div>
+                </div>
+                <div  class="p-6 flex ">
+                    <div id="total__amount" class="txt-2xl p-4 txt-gray-200">Apply Coupon!</div>
+                    <input class="coupon__code" type="text">
                 </div>
                 <div  class="p-6 flex ">
                     <div id="total__amount" class="txt-2xl p-4 txt-gray-200">You are saving ₹1200 with this order!</div>
     
                 </div>
+
                 <div  class="p-6 flex ">
-                    <button class="button width-full  bg--success p-8 txt-4xl txt-bold txt-main-black rounded-2xl flex justify-center align-center">Place Order</button>
+                    <button class="button width-full  bg--primary p-8 txt-4xl txt-bold txt-main-black rounded-2xl flex justify-center align-center">Proceed to Pay</button>
                 </div>
                 
                 
