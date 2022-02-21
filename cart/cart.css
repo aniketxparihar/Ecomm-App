@@ -94,7 +94,12 @@ main {
   text-align: center;
   margin: 4rem;
 }
-
+.card__wrapper--horizontal {
+  background-color: var(--main-black);
+  width: max-content;
+  border-radius: 16px;
+  box-shadow: -0px 0px 20px 6px rgba(0, 0, 0, 0.4);
+}
 
 @media screen and (max-width: 1000px) {
   .card__wrapper--horizontal {
