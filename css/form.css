@@ -17,7 +17,7 @@
 }
 #form__container {
   width: 50rem;
-  height: 50rem;
+  height: 60rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -89,16 +89,7 @@ label {
   font-size: 2rem;
 }
 
-form {
-  width: 100%;
-  height: 60rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 6rem;
-  box-sizing: border-box;
-  color: var(--gray-400);
-}
+
 
 #footer {
   width: 100%;

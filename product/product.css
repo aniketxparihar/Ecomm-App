@@ -124,18 +124,22 @@ main {
 
 
 .modal {
-  width: 150rem;
+  width: 60%;
   background-color: var(--main-white);
   border-radius: 4px;
   display: flex;
   justify-content: center;
   flex-direction: row;
-   margin-top:10rem;
+   margin-top:5rem;
+   position: relative;
 }
 #modal__image {
   margin-top: 0rem;
   border-radius: 4px;
   width:50%;
+}
+.remove{
+  z-index:9999;
 }
 .content__wrapper {
   width: 60%;
@@ -204,6 +208,6 @@ main {
 #modal__image {
   margin-top: 0rem;
   border-radius: 4px;
-   width:100%;
+  width:100%;
 }
 }
