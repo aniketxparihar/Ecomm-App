@@ -191,6 +191,7 @@ main {
   display: block;
 }
 .modal {
+  position:relative;
   height: max-content;
   width: 80%;
   background-color: var(--main-white);
