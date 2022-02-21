@@ -7,14 +7,10 @@
   color: var(--main-black);
   font-size: 2rem;
   background-color: var(--primary);
-  box-shadow: -7px 7px 0 var(--dark-blue-600), -14px 14px 0 var(--dark-blue-800);
   transition: 1s;
   cursor: pointer;
 }
-#signup__button:hover,#login__button:hover {
-  transform: translate(-10px, 10px);
-  box-shadow: 0px 0px 0 black;
-}
+
 #form__container {
   width: 50rem;
   height: 60rem;
@@ -24,8 +20,6 @@
   padding: 2rem;
   border-radius: 24px;
   box-shadow: -0px 0px 20px 6px rgba(0, 0, 0, 0.4);
-  box-shadow: -0px 0px 20px 6px rgba(0, 0, 0, 0.4),
-    -7px 7px 0 var(--dark-blue-600), -14px 14px 0 var(--dark-blue-800);
 }
 #heading {
   font-size: 3rem;
