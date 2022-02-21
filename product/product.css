@@ -124,7 +124,7 @@ main {
 
 
 .modal {
-  width: 150rem;
+  width:60%;
   background-color: var(--main-white);
   border-radius: 4px;
   display: flex;
