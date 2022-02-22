@@ -208,3 +208,7 @@ main {
    width:100%;
 }
 }
+
+.page__previous,.page__next{
+  margin:0rem 2rem;
+}
