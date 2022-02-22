@@ -29,7 +29,8 @@ DevShots is a Quiz App for latest trends in Web Development. Refresh your Dev kn
 #### Will be Uploading More Features Soon...
 
 ### **Video**
-https://user-images.githubusercontent.com/44872604/155028409-4e2e34fd-ff13-4d71-b9ba-fe11a904cdad.mp4
+https://user-images.githubusercontent.com/44872604/155063786-871807f3-165d-40ad-a6a5-9798da9dad80.mp4
+
 
 <br />
 
