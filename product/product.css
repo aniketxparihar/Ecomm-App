@@ -108,7 +108,6 @@ main {
   align-items: center;
   margin-top: 5vh;
   margin-left: 10rem;
-  padding-bottom: 10rem;
   gap: 4rem;
 }
 #products::-webkit-scrollbar {
@@ -234,9 +233,4 @@ main {
 }
 .page__previous:hover,.page__next:hover,.page__number:hover{
 background-color: var(--gray-600);
-}
-.pagination__container{
-  position: fixed;
-  bottom:0;
-  background-color: var(--main-black);
 }

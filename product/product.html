@@ -12,7 +12,7 @@
 </head>
 
 <body class="bg-main-black">
-    <nav class="">
+   <nav class="">
         <a href="../index.html" id="logo" class="txt-gray-200">Fitkart</a>
         <div id="search__container">
             <input type="text" id="search__input" placeholder="  Search Here " />
@@ -21,8 +21,7 @@
         </div>
 
         <div id="links">
-            <a href="../login/login.html" class="link bg--secondary  txt-main-black txt-2xl pointer" id="signout">Sign
-                out</a>
+            <a href="../login/login.html" class="link bg--secondary  txt-main-black txt-2xl pointer" id="signout">Sign out</a>
 
             <a class="link pointer" id="cart__page" href="../wishlist/wishlist.html"><i
                     class="badge__icon material-icons relative p-5 txt-gray-400">favorite_border
@@ -38,33 +37,32 @@
                         4
                     </div>
                 </i></a>
-            <div class="link pointer hamburger" id="cart__page"><i
+                <div class="link pointer hamburger" id="cart__page" ><i
                     class="badge__icon material-icons relative p-5 txt-gray-400">menu
                 </i></div>
         </div>
     </nav>
-    <div class="hidden__menu">
+<div class="hidden__menu">
+                
+            <a href="../signup/signup.html" class="hidden__link bg--primary txt-main-black txt-2xl pointer" id="signup">Signup</a>
 
-        <a href="../signup/signup.html" class="hidden__link bg--primary txt-main-black txt-2xl pointer"
-            id="signup">Signup</a>
-
-        <a class="hidden__link pointer" id="cart__page" href="../wishlist/wishlist.html"><i
-                class="badge__icon material-icons relative p-5 txt-gray-400">favorite_border
-                <div
-                    class="badge--right badge--small txt-2xl txt-main-black bg--success flex justify-center align-center rounded-full absolute">
-                    4
-                </div>
-            </i></a>
-        <a class="hidden__link pointer" id="cart__page" href="../cart/cart.html"><i
-                class="badge__icon material-icons relative p-5 txt-gray-400">shopping_cart
-                <div
-                    class="badge--right badge--small txt-2xl txt-main-black bg--success flex justify-center align-center rounded-full absolute">
-                    4
-                </div>
-            </i></a>
-        <div class="hidden__link pointer close" id="cart__page"><i
-                class="badge__icon material-icons relative p-5 txt-gray-400">close
-            </i></div>
+            <a class="hidden__link pointer" id="cart__page" href="../wishlist/wishlist.html"><i
+                    class="badge__icon material-icons relative p-5 txt-gray-400">favorite_border
+                    <div
+                        class="badge--right badge--small txt-2xl txt-main-black bg--success flex justify-center align-center rounded-full absolute">
+                        4
+                    </div>
+                </i></a>
+            <a class="hidden__link pointer" id="cart__page" href="../cart/cart.html"><i
+                    class="badge__icon material-icons relative p-5 txt-gray-400">shopping_cart
+                    <div
+                        class="badge--right badge--small txt-2xl txt-main-black bg--success flex justify-center align-center rounded-full absolute">
+                        4
+                    </div>
+                </i></a>
+                <div class="hidden__link pointer close" id="cart__page" ><i
+                    class="badge__icon material-icons relative p-5 txt-gray-400">close
+                </i></div>
     </div>
     <main>
         <div id="main__container">
@@ -159,14 +157,75 @@
 
             <div id="products" class="p-4 ">
 
-                
+
                 <div class="card__wrapper flex rounded-xl flex-col m-8 bg-main-white  box-shadow">
                     <div class="card__header flex flex-col relative">
-                        <img  class=" card__image--tall pointer"
+                        <img onclick="modalOpen()" class=" card__image--tall pointer"
+                            src="https://m.media-amazon.com/images/I/61Bw67-+OvL._AC_SY300_SX300_.jpg" alt="" />
+
+                        <div class="card__headings">
+                            <p class="txt-4xl txt-gray-50">Dumbells 5 Pounds</p>
+                            <p class="txt-2xl txt-gray-400"></p>
+                        </div>
+
+                    </div>
+
+                    <div class="card__footer  m-2 flex align-center ">
+                        <p class="txt-4xl bold txt-gray-100 m-2">₹600</p>
+                        <p class="txt-3xl bold m-0 txt-gray-400 line-through">₹1200</p>
+                        <p class="txt-3xl bold m-2 txt-yellow-500">(50% Off)</p>
+                        <i class="liked material-icons pointer txt-main-white">favorite_border</i>
+                    </div>
+                    <div id="buynow" class="card__links p-4 align-center flex">
+                        <button
+                            class="button  p-4 txt-2xl width-full txt-bold bg--primary rounded-xl flex justify-center align-center">Buy
+                            Now</button>
+                    </div>
+                    <div id="addtocart" class="card__links p-4 align-center flex">
+                        <button
+                            class="button  p-4 txt-2xl width-full txt-bold bg-main-black border--primary txt--primary b-1 border-solid  rounded-xl flex justify-center align-center"><i
+                                class="button__icon material-icons">shopping_cart</i>Add to cart</button>
+                    </div>
+
+                </div>
+
+                <div class="card__wrapper flex rounded-xl flex-col m-8 bg-main-white  box-shadow">
+                    <div class="card__header flex flex-col relative">
+                        <img onclick="modalOpen()" class=" card__image--tall pointer"
+                            src="https://m.media-amazon.com/images/I/61pTjbptTYL._AC_UL320_.jpg" alt="" />
+
+                        <div class="card__headings">
+                            <p class="txt-4xl txt-gray-50">Dumbells 3 pounds</p>
+                            <p class="txt-2xl txt-gray-400"></p>
+                        </div>
+
+                    </div>
+
+                    <div class="card__footer  m-2 flex align-center ">
+                        <p class="txt-4xl bold txt-gray-100 m-2">₹400</p>
+                        <p class="txt-3xl bold m-0 txt-gray-400 line-through">₹800</p>
+                        <p class="txt-3xl bold m-2 txt-yellow-500">(50% Off)</p>
+                        <i class="liked material-icons pointer txt-main-white">favorite_border</i>
+                    </div>
+                    <div id="buynow" class="card__links p-4 align-center flex">
+                        <button
+                            class="button  p-4 txt-2xl width-full txt-bold bg--primary  rounded-xl flex justify-center align-center">Buy
+                            Now</button>
+                    </div>
+                    <div id="addtocart" class="card__links p-4 align-center flex">
+                        <button
+                            class="button  p-4 txt-2xl width-full txt-bold bg-main-black border--primary txt--primary b-1 border-solid  rounded-xl flex justify-center align-center"><i
+                                class="button__icon material-icons">shopping_cart</i>Add to cart</button>
+                    </div>
+
+                </div>
+                <div class="card__wrapper flex rounded-xl flex-col m-8 bg-main-white  box-shadow">
+                    <div class="card__header flex flex-col relative">
+                        <img onclick="modalOpen()" class=" card__image--tall pointer"
                             src="https://m.media-amazon.com/images/I/51ZrS1jL7WL._AC_SL1000_.jpg" alt="" />
 
                         <div class="card__headings">
-                            <p class="h3 txt-gray-50">Adjustable Dumbells</p>
+                            <p class="txt-4xl txt-gray-50">Adjustable Dumbells</p>
                             <p class="txt-2xl txt-gray-400"></p>
                         </div>
 
@@ -192,12 +251,12 @@
                 </div>
                 <div class="card__wrapper flex rounded-xl flex-col m-8 bg-main-white  box-shadow">
                     <div class="card__header flex flex-col relative">
-                        <img  class=" card__image--tall pointer "
+                        <img onclick="modalOpen()" class=" card__image--tall pointer "
                             src="https://m.media-amazon.com/images/S/onsitepublishing-media-prod/2739c9bb-33df-473a-ae0c-f9079397987b/images/10f9537c-ae39-4acd-ba5c-fe5743ca10c9.jpg"
                             alt="" />
 
                         <div class="card__headings">
-                            <p class="h3 txt-gray-50">Workout Bench</p>
+                            <p class="txt-4xl txt-gray-50">Workout Bench</p>
                             <p class="txt-2xl txt-gray-400"></p>
                         </div>
 
@@ -223,12 +282,12 @@
                 </div>
                 <div class="card__wrapper flex rounded-xl flex-col m-8 bg-main-white  box-shadow">
                     <div class="card__header flex flex-col relative">
-                        <img  class=" card__image--tall pointer"
+                        <img onclick="modalOpen()" class=" card__image--tall pointer"
                             src="https://images-na.ssl-images-amazon.com/images/I/71Gj4j0N-NL._RC%7C71Gj4j0N-NL.jpg_SY300_SX300_.jpg"
                             alt="" />
 
                         <div class="card__headings">
-                            <p class="h3 txt-gray-50">Customisable Bench</p>
+                            <p class="txt-4xl txt-gray-50">Customisable Bench</p>
                             <p class="txt-2xl txt-gray-400"></p>
                         </div>
 
@@ -254,15 +313,12 @@
                 </div>
                 <div class="card__wrapper flex rounded-xl flex-col m-8 bg-main-white  box-shadow">
                     <div class="card__header flex flex-col relative">
-                        <img  class=" card__image--tall pointer"
+                        <img onclick="modalOpen()" class=" card__image--tall pointer"
                             src="https://images.unsplash.com/photo-1526401485004-46910ecc8e51?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YmFyYmVsbHxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60"
                             alt="" />
-                        <div class="card__over-img--tag p-2 m-2 bg-yellow-400 flex justify-center align-center ">
-                        <p class="card__sub__heading txt-2xl bold txt-main-black flex justify-center align-center"><i
-                                class="button__icon material-icons">trending_up</i>Best Seller</p>
-                         </div>            
+
                         <div class="card__headings">
-                            <p class="h3 txt-gray-50">Barbell Weights</p>
+                            <p class="txt-4xl txt-gray-50">Barbell Weights</p>
                             <p class="txt-2xl txt-gray-400"></p>
                         </div>
 
@@ -286,18 +342,14 @@
                     </div>
 
                 </div>
-
                 <div class="card__wrapper flex rounded-xl flex-col m-8 bg-main-white  box-shadow">
                     <div class="card__header flex flex-col relative">
-                        <img  class=" card__image--tall pointer"
+                        <img onclick="modalOpen()" class=" card__image--tall pointer"
                             src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Z3ltfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                             alt="" />
-                            <div class="card__over-img--tag p-2 m-2 bg-red-400 flex justify-center align-center ">
-                        <p class="card__sub__heading txt-2xl bold txt-main-black flex justify-center align-center"><i
-                                class="button__icon material-icons">do_disturb</i>Out of Stock</p>
-                         </div>      
+
                         <div class="card__headings">
-                            <p class="h3 txt-gray-50">Barbell Rod</p>
+                            <p class="txt-4xl txt-gray-50">Barbell Rod</p>
                             <p class="txt-2xl txt-gray-400"></p>
                         </div>
 
@@ -323,12 +375,12 @@
                 </div>
                 <div class="card__wrapper flex rounded-xl flex-col m-8 bg-main-white  box-shadow">
                     <div class="card__header flex flex-col relative">
-                        <img  class=" card__image--tall pointer"
+                        <img onclick="modalOpen()" class=" card__image--tall pointer"
                             src="https://images.unsplash.com/photo-1514994444123-10094655bdb5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
                             alt="" />
 
                         <div class="card__headings">
-                            <p class="h3 txt-gray-50">Gym Rope</p>
+                            <p class="txt-4xl txt-gray-50">Gym Rope</p>
                             <p class="txt-2xl txt-gray-400"></p>
                         </div>
 
@@ -354,11 +406,11 @@
                 </div>
                 <div class="card__wrapper flex rounded-xl flex-col m-8 bg-main-white  box-shadow">
                     <div class="card__header flex flex-col relative">
-                        <img  class=" card__image--tall pointer"
+                        <img onclick="modalOpen()" class=" card__image--tall pointer"
                             src="https://m.media-amazon.com/images/I/61v7slnHBnL._AC_UL320_.jpg" alt="" />
 
                         <div class="card__headings">
-                            <p class="h3 txt-gray-50">Skipping Rope</p>
+                            <p class="txt-4xl txt-gray-50">Skipping Rope</p>
                             <p class="txt-2xl txt-gray-400"></p>
                         </div>
 
@@ -382,22 +434,188 @@
                     </div>
 
                 </div>
-            
+                <div class="card__wrapper flex rounded-xl flex-col m-8 bg-main-white  box-shadow">
+                    <div class="card__header flex flex-col relative">
+                        <img onclick="modalOpen()" class=" card__image--tall pointer"
+                            src="https://images.unsplash.com/photo-1637157216470-d92cd2edb2e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8eW9nYSUyMG1hdHxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60"
+                            alt="" />
+
+                        <div class="card__headings">
+                            <p class="txt-4xl txt-gray-50">Yoga Mat</p>
+                            <p class="txt-2xl txt-gray-400"></p>
+                        </div>
+
+                    </div>
+
+                    <div class="card__footer  m-2 flex align-center ">
+                        <p class="txt-4xl bold txt-gray-100 m-2">₹900</p>
+                        <p class="txt-3xl bold m-0 txt-gray-400 line-through">₹1200</p>
+                        <p class="txt-3xl bold m-2 txt-yellow-500">(₹300 Off)</p>
+                        <i class="liked material-icons pointer txt-main-white">favorite_border</i>
+                    </div>
+                    <div id="buynow" class="card__links p-4 align-center flex">
+                        <button
+                            class="button  p-4 txt-2xl width-full txt-bold bg--primary  rounded-xl flex justify-center align-center">Buy
+                            Now</button>
+                    </div>
+                    <div id="addtocart" class="card__links p-4 align-center flex">
+                        <button
+                            class="button  p-4 txt-2xl width-full txt-bold bg-main-black border--primary txt--primary b-1 border-solid  rounded-xl flex justify-center align-center"><i
+                                class="button__icon material-icons">shopping_cart</i>Add to cart</button>
+                    </div>
+
+                </div>
+                <div class="card__wrapper flex rounded-xl flex-col m-8 bg-main-white  box-shadow">
+                    <div class="card__header flex flex-col relative">
+                        <img onclick="modalOpen()" class=" card__image--tall pointer"
+                            src="https://images.unsplash.com/photo-1567281105113-a9b2effdc9a8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+                            alt="" />
+
+                        <div class="card__headings">
+                            <p class="txt-4xl txt-gray-50">Pair Yoga Mat</p>
+                            <p class="txt-2xl txt-gray-400"></p>
+                        </div>
+
+                    </div>
+
+                    <div class="card__footer  m-2 flex align-center ">
+                        <p class="txt-4xl bold txt-gray-100 m-2">₹1000</p>
+                        <p class="txt-3xl bold m-0 txt-gray-400 line-through">₹1400</p>
+                        <p class="txt-3xl bold m-2 txt-yellow-500">(₹1400 Off)</p>
+                        <i class="liked material-icons pointer txt-main-white">favorite_border</i>
+                    </div>
+                    <div id="buynow" class="card__links p-4 align-center flex">
+                        <button
+                            class="button  p-4 txt-2xl width-full txt-bold bg--primary  rounded-xl flex justify-center align-center">Buy
+                            Now</button>
+                    </div>
+                    <div id="addtocart" class="card__links p-4 align-center flex">
+                        <button
+                            class="button  p-4 txt-2xl width-full txt-bold bg-main-black border--primary txt--primary b-1 border-solid  rounded-xl flex justify-center align-center"><i
+                                class="button__icon material-icons">shopping_cart</i>Add to cart</button>
+                    </div>
+
+                </div>
+                <div class="card__wrapper flex rounded-xl flex-col m-8 bg-main-white  box-shadow">
+                    <div class="card__header flex flex-col relative">
+                        <img onclick="modalOpen()" class=" card__image--tall pointer"
+                            src="https://m.media-amazon.com/images/I/718m1rMOPFL._AC_SL1500_.jpg" alt="" />
+
+                        <div class="card__headings">
+                            <p class="txt-4xl txt-gray-50">Exercise Ball</p>
+                            <p class="txt-2xl txt-gray-400"></p>
+                        </div>
+
+                    </div>
+
+                    <div class="card__footer  m-2 flex align-center ">
+                        <p class="txt-4xl bold txt-gray-100 m-2">₹450</p>
+                        <p class="txt-3xl bold m-0 txt-gray-400 line-through">₹600</p>
+                        <p class="txt-3xl bold m-2 txt-yellow-500">(25% Off)</p>
+                        <i class="liked material-icons pointer txt-main-white">favorite_border</i>
+                    </div>
+                    <div id="buynow" class="card__links p-4 align-center flex">
+                        <button
+                            class="button  p-4 txt-2xl width-full txt-bold bg--primary  rounded-xl flex justify-center align-center">Buy
+                            Now</button>
+                    </div>
+                    <div id="addtocart" class="card__links p-4 align-center flex">
+                        <button
+                            class="button  p-4 txt-2xl width-full txt-bold bg-main-black border--primary txt--primary b-1 border-solid  rounded-xl flex justify-center align-center"><i
+                                class="button__icon material-icons">shopping_cart</i>Add to cart</button>
+                    </div>
+
+                </div>
+                <div class="card__wrapper flex rounded-xl flex-col m-8 bg-main-white  box-shadow">
+                    <div class="card__header flex flex-col relative">
+                        <img onclick="modalOpen()" class=" card__image--tall pointer"
+                            src="https://m.media-amazon.com/images/I/61+qsidCNBL._AC_SL1500_.jpg" alt="" />
+
+                        <div class="card__headings">
+                            <p class="txt-4xl txt-gray-50">Push Up Bars</p>
+                            <p class="txt-2xl txt-gray-400"></p>
+                        </div>
+
+                    </div>
+
+                    <div class="card__footer  m-2 flex align-center ">
+                        <p class="txt-4xl bold txt-gray-100 m-2">₹300</p>
+                        <p class="txt-3xl bold m-0 txt-gray-400 line-through">₹600</p>
+                        <p class="txt-3xl bold m-2 txt-yellow-500">(50% Off)</p>
+                        <i class="liked material-icons pointer txt-main-white">favorite_border</i>
+                    </div>
+                    <div id="buynow" class="card__links p-4 align-center flex">
+                        <button
+                            class="button  p-4 txt-2xl width-full txt-bold bg--primary  rounded-xl flex justify-center align-center">Buy
+                            Now</button>
+                    </div>
+                    <div id="addtocart" class="card__links p-4 align-center flex">
+                        <button
+                            class="button  p-4 txt-2xl width-full txt-bold bg-main-black border--primary txt--primary b-1 border-solid  rounded-xl flex justify-center align-center"><i
+                                class="button__icon material-icons">shopping_cart</i>Add to cart</button>
+                    </div>
+
+                </div>
+
 
             </div>
 
         </div>
 
     </main>
-    <ul class="pagination__container width-full txt-main-white p-8 h5 flex justify-center "><span
-            class="page__previous pointer txt--primary ">&lt; </span>
-        <li class="page__number">1</li>
-        <li class="page__number">2</li>
-        <li class="page__number">3</li> ... <li class="page__number">6</li> <span
-            class="page__next pointer txt--primary">&gt;</span>
-    </ul>
-    
-       
+    <ul class="width-full txt-main-white p-8 h5 flex justify-center "><span class="page__previous pointer txt--primary ">&lt; </span> <li class="page__number">1</li> <li class="page__number">2</li> <li class="page__number">3</li> ... <li class="page__number">6</li>    <span class="page__next pointer txt--primary">&gt;</span> </ul>
+    <div class="modal__screen ">
+        <div class="modal__box flex justify-center align-center">
+            <div class="modal relative">
+                <img id="modal__image" class=""
+                    src="https://images.unsplash.com/photo-1567281105113-a9b2effdc9a8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+                    alt="">
+                <div class="content__wrapper flex rounded-xl flex-col m-8 bg-main-white">
+                    <div class="card__header flex flex-col relative">
+
+                        <div class="card__headings">
+                            <p class="txt-4xl txt-gray-800">Yoga Pair Mattress</p>
+                            <p class="txt-2xl txt-gray-700"></p>
+                        </div>
+
+                    </div>
+
+                    <div class="card__footer  m-2 flex align-center ">
+                        <p class="txt-4xl bold txt-gray-800 m-2">₹450</p>
+                        <p class="txt-3xl bold m-0 txt-gray-400 line-through">₹600</p>
+                        <p class="txt-3xl bold m-2 txt-yellow-500">(25% Off)</p>
+                        <i class="liked material-icons pointer txt-main-black">favorite_border</i>
+                    </div>
+                    <div id="buynow" class="card__links p-4 align-center flex">
+                        <button
+                            class="button  p-4 txt-2xl width-full txt-bold bg--primary  rounded-xl flex justify-center align-center">Buy
+                            Now</button>
+                    </div>
+                    <div id="addtocart" class="card__links p-4 align-center flex">
+                        <button
+                            class="button  p-4 txt-2xl width-full txt-bold bg-main-white border--primary txt--primary b-1 border-solid  rounded-xl flex justify-center align-center"><i
+                                class="button__icon material-icons">shopping_cart</i>Add to cart</button>
+                    </div>
+                    <p class="m-4 txt-2xl">Category: Yoga</p>
+                    <p class="m-4 txt-2xl">Type:Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta,
+                        laudantium.</p>
+                    <div class="flex">
+                        <p class="width-half m-4 txt-4xl flex flex-row">Rating:</p>
+                        <div class="rating flex flex-row-reverse justify-center align-center">
+                            <input type="radio" name="star" id="star5" checked="checked"><label class="h4"
+                                for="star5"></label>
+                            <input type="radio" name="star" id="star4"><label class="h4" for="star4"></label>
+                            <input type="radio" name="star" id="star3"><label class="h4" for="star3"></label>
+                            <input type="radio" name="star" id="star2"><label class="h4" for="star2"></label>
+                            <input type="radio" name="star" id="star1"><label class="h4" for="star1"></label>
+                        </div>
+                    </div>
+
+                </div>
+                <i onclick="modalClose()"
+                    class="material-icons remove remove__modal absolute txt-main-black pointer">cancel</i>
+            </div>
+        </div>
         <script src="../script.js"></script>
         <script src="https://atomui.netlify.app/script.js"></script>
         <script src="https://use.fontawesome.com/8cdd008a2c.js"></script>
