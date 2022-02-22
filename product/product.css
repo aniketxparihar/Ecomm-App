@@ -208,3 +208,29 @@ main {
    width:100%;
 }
 }
+
+.page__previous,.page__next{
+  margin:0rem 2rem;
+  height:4rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page__number{
+  text-decoration: none;
+  list-style: none;
+  margin:0rem 2rem;
+  cursor:pointer;
+  height:4rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: var(--gray-800);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page__previous:hover,.page__next:hover,.page__number:hover{
+background-color: var(--gray-600);
+}
