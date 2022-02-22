@@ -1,10 +1,10 @@
-### [Fitkart - One Stop Shop for All Fitness related Needs - Landing](https://fitkart-e-comm.netlify.app/home/index.html)
+### [Fitkart - One Stop Shop for All Fitness related Needs ](https://fitkart-e-comm.netlify.app/home/index.html)
 
 ## **Table of contents**
 
 - [Overview](#overview)
 
-  - [Documentation](#documentation)
+  - [Links](#links)
   - [Video](#video)
 
 - [Tech]()
@@ -18,18 +18,30 @@
 
 <br />
 
-DevShots is a Quiz App for latest trends in Web Development. Refresh your Dev knowledge and stay on top of your game!.
-
+Fitkart is Ecommerce Platform made for selling fitness products that includes Gym products and Yoga Equiments to help you achieve your overall health.
 <br />
 
-### **Documentation**
-
+### **Links**
+### [Fitkart - Home](https://fitkart-e-comm.netlify.app/index.html)
+### [Fitkart - Product Listing](https://fitkart-e-comm.netlify.app/product/product.html)
+### [Fitkart - Wishlist](https://fitkart-e-comm.netlify.app/wishlist/wishlist.html)
+### [Fitkart - Cart](https://fitkart-e-comm.netlify.app/cart/cart.html)
+### [Fitkart - Login Page](https://fitkart-e-comm.netlify.app/login/login.html)
+### [Fitkart - Forgot Password Page](https://fitkart-e-comm.netlify.app/forgotpassword/forgotpassword)
+### [Fitkart - Signup Page](https://fitkart-e-comm.netlify.app/signup/signup.html)
+### [Fitkart - Single Product Page](https://fitkart-e-comm.netlify.app/productpage/product__page)
+### [Fitkart - Address Management Page](https://fitkart-e-comm.netlify.app/addressmanagement/address__management)
 <br />
 
-#### Will be Uploading More Features Soon...
+#### Will be Uploading More Screens Soon...
 
 ### **Video**
-https://user-images.githubusercontent.com/44872604/155063786-871807f3-165d-40ad-a6a5-9798da9dad80.mp4
+
+https://user-images.githubusercontent.com/44872604/155200760-46bb3053-ef6a-4d50-b7ef-b15bf988d2fb.mp4
+
+![image](https://user-images.githubusercontent.com/44872604/155200906-d48b86f0-3d2b-4d48-a64b-c46c46f7db19.png)
+![image](https://user-images.githubusercontent.com/44872604/155200946-1c94b32c-8732-4244-b981-cfcd577e0dda.png)
+![image](https://user-images.githubusercontent.com/44872604/155201021-c58bf2b6-f0e9-4bd0-a3d1-54e926b1d349.png)
 
 
 <br />
